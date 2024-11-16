@@ -1,0 +1,12 @@
+<div class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+  <div class="flex justify-between items-center mb-4">
+    <h2 class="text-xl font-bold">Tags</h2>
+    <a href="{{ url_for('manage_all_tags') }}" class="btn btn-sm"
+      >Manage Tags</a
+    >
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="overflow-y-auto">{{ tag_html }}</div>
+</div>
